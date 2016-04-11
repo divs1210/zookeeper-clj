@@ -3,7 +3,7 @@
                                         ServerConfig)))
 
 (defn server-config
-  ([filename]
+  ([^String filename]
    (doto (ServerConfig.)
      (.parse filename))))
 
